@@ -1,0 +1,2 @@
+[08-Jun-2021 16:25:06 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 7.2.34. in /home/alaxrekw/cortex.alaxatech.com/vendor/composer/platform_check.php on line 24
+[12-Jun-2021 14:49:09 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/alaxrekw/cortex.alaxatech.com/app/Http/Controllers/TestController.php on line 73

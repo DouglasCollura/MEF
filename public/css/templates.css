@@ -1,0 +1,201 @@
+
+@media (min-width: 1200px){
+	.card-presupuesto{
+		display: grid;
+		min-width: 1000px;
+		justify-self: center;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+
+
+}
+/* LARGE */
+@media (min-width: 992px) { 
+	
+	.temp-chartUno{
+		display: grid;
+		grid-template: 
+		"chartUnoTop chartUnoTop" auto
+		"chartUnoLeft chartUnoRight" auto
+		"chartUnoBottom chartUnoBottom" auto/
+			50% 50% 
+	}
+
+	.chartUnoTop{
+		margin:20px 0px;
+		padding: 15px;
+		grid-area: chartUnoTop;
+	}
+	.chartUnoLeft{
+		margin-left: auto;
+		min-width: 400px;
+		justify-items: center;
+		grid-area: chartUnoLeft;
+	}
+
+	.chartUnoRight{
+		margin:10px 0px;
+		margin-right: auto;
+		grid-area: chartUnoRight;
+	}
+
+	.chartUnoBottom{
+		margin:5px 5%;
+		padding: 0px 30px;
+		grid-area:chartUnoBottom;
+	}
+
+	/* ============ CHART 2 ================================== */
+
+	.temp-chartDos{
+		display: grid;
+
+		grid-template: 
+		"chartDosTop chartDosTop" auto
+		"chartDosLeft chartDosTopRight" auto
+		"chartDosMiddle chartDosMiddle" auto
+		"chartDosBottom chartDosBottom" auto/
+			50% 50% 
+	}
+
+	.chartDosTop{
+		margin:20px 0px;
+		grid-area: chartDosTop;
+	}
+	.chartDosLeft{
+		margin-left: auto;
+		display: grid;
+		align-self: start;
+		min-width: 400px;
+		grid-area: chartDosLeft;
+		justify-items: center;
+	}
+
+	.chartDosTopRight{
+		display: grid;
+		grid-gap: 10px 0px;
+		justify-items: center;
+		min-width: 400px;
+		max-width: 400px;
+		grid-area: chartDosTopRight;
+	}
+
+	.chartDosMiddle{
+		margin:30px auto;
+		grid-area: chartDosMiddle;
+		min-width: 800px;
+	}
+
+	.chartDosBottom{
+		margin:5px auto;
+		min-width: 900px;
+		grid-area: chartDosBottom;
+	}
+
+
+	/* CHART 2 */
+
+}
+
+/* TABLETS*/
+@media (min-width: 768px) and (max-width: 992px) { 
+
+
+
+
+}
+
+/* PHONE*/
+
+@media (min-width: 100px)  and (max-width: 767px) {
+
+
+
+
+}
+ 
+/* SMALL -- MEDIUM */
+
+@media (min-width: 100px)  and (max-width: 992px) {
+	
+	.temp-chartUno{
+		display: grid;
+		grid-template: 
+		"chartUnoTop" auto
+		"chartUnoLeft" auto
+		"chartUnoRight" auto
+		"chartUnoBottom" auto/
+			100% 
+	}
+
+	.chartUnoTop{
+		margin:20px 0px;
+		padding: 15px;
+		grid-area: chartUnoTop;
+	}
+	.chartUnoLeft{
+		margin:10px auto;
+		grid-area: chartUnoLeft;
+		padding: 0px 30px;
+	}
+
+	.chartUnoRight{
+		margin:10px auto;
+		grid-area: chartUnoRight;
+	}
+
+	.chartUnoBottom{
+		margin:5px 5%;
+		padding: 0px 30px;
+		grid-area:chartUnoBottom;
+	}
+
+	.temp-chartDos{
+		display: grid;
+
+		grid-template: 
+		"chartDosTop" auto
+		"chartDosLeft" auto
+		"chartDosTopRight" auto
+		"chartDosMiddle" auto
+		"chartDosBottom" auto/
+			100% 
+	}
+
+	.chartDosTop{
+		margin:20px 0px;
+		grid-area: chartDosTop;
+	}
+	.chartDosLeft{
+		display: grid;
+		min-width: 400px;
+		max-width: 450px;
+		justify-self: center;
+		grid-area: chartDosLeft;
+		justify-items: center;
+	}
+
+	.chartDosTopRight{
+		display: grid;
+		margin: 20px 0px;
+		grid-gap: 5px 0px;
+		justify-self: center;
+		justify-items: center;
+		min-width: 400px;
+		max-width: 400px;
+		grid-area: chartDosTopRight;
+	}
+
+	.chartDosMiddle{
+		margin:30px auto;
+		grid-area: chartDosMiddle;
+	}
+
+	.chartDosBottom{
+		margin:5px 5%;
+		grid-area: chartDosBottom;
+	}
+
+}

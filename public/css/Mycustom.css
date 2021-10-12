@@ -1,0 +1,244 @@
+:root{
+  --rojo: #EB5767;
+  --verde:#98BD1F;
+  --gris-text:#333333;
+  --gris-claro:rgba(38, 41, 46, 0.2);
+  --azul-claro:rgba(0, 148, 248, 0.1);
+  --azul-oscuro:#00489A;
+}
+@charset "UTF-8";
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../font/Montserrat/Montserrat-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../font/Montserrat/Montserrat-Regular.ttf");
+  font-weight: normal;
+
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../font/Montserrat/Montserrat-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../font/Montserrat/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../font/Montserrat/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+}
+
+html{
+	height:100%;
+}
+
+select{
+	-webkit-appearance: none;
+  -moz-appearance: none;
+	background-color: var(--azul-claro);
+	border:none;
+	padding: 5px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	min-width: 100px;
+	max-width: 400px;
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position-x: 99%;
+  background-position-y: 10px;
+  border: 1px solid #dfdfdf;
+  margin-right: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+body{
+	min-height: 100%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight:500;
+	font-size: 12px;
+	line-height: 20px;
+	color: var(--gris-text);
+}
+
+.container{
+	max-width: 1450px;
+	min-width:992px;
+	display: grid;
+	justify-self:center;
+}
+.titulo{
+	color:var(--azul-oscuro);
+}
+.separator{
+	margin:5px auto;
+	width: 100%;
+	height: 2px;
+	background-color: var(--gris-claro);
+}
+
+
+
+.img-content{
+	cursor: pointer;
+	width: 18px;height: 18px;
+	position: absolute;
+	z-index: 1;
+	color:white;
+	background-image: url('../img/btn-select.svg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-origin: content-box;
+	background-position: center center; 
+}
+
+.img-content-dis{
+	cursor: pointer;
+	margin-top: 2px;
+	width: 12px;height: 12px;
+	position: absolute;
+	z-index: 1;
+	color:white;
+	background-image: url('../img/btn-dis.svg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-origin: content-box;
+	background-position: center center; 
+}
+
+.content-barra{
+	position: relative;
+	width: 100%;
+	height: 20px;
+	max-width: 300px;
+}
+
+.img-left{
+	position: absolute;
+	left: 0%;
+
+}
+
+.img-center{
+	position: absolute;
+	left: 50%;
+}
+
+.img-right{
+	
+	position: absolute;
+	left: 100%;
+	
+}
+.line{
+	position: absolute; 
+	top: 7px;
+	background-color: var(--gris-claro);
+	width: 100%; 
+	height: 2px;
+}
+
+.graph-bar{
+	max-width: 400px
+}
+
+.title-red{
+	color: var(--rojo)
+}
+.barra-select {
+    transition: 0.2s;
+    background-color: #00489A;
+}
+
+.barra{
+	height: 10px; 
+	background-color: #3ABEB0;
+	border-radius: 3px; 
+	width: 1%;
+	display: inline-block; 
+	max-width: 200px
+}
+
+.porcentaje{
+	display: inline-block; 
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 12px;
+	letter-spacing: 0.01em;
+}
+
+.card-vista2{
+	background-color: var(--azul-claro);
+	padding: 5px;
+}
+
+.card-vista2>span{
+	margin: 0px 5px;
+}
+
+.card-title{
+	color: #707988;
+}
+
+.card-number{
+	color:var(--azul-oscuro);
+}
+
+.card-chart-left{
+	padding: 20px;
+	background-color: var(--azul-oscuro);
+}
+
+.card-chart-center{
+
+	padding: 10px;
+	border-bottom: 3px solid var(--gris-claro);
+	width: 100%;
+}
+
+.select-pliegue1{
+	margin: 4px 0px;
+	margin-right: 10px;
+	cursor:pointer;
+}
+
+.select-pliegue1-select{
+	margin: 4px 0px;
+	margin-right: 10px;
+	background-color: rgba(38, 41, 46, 0.1);
+	border-radius: 4px;
+}
+
+.barra-select{
+	transition: 0.2s;
+	background-color: #00489A;
+}
+
+
+.card{
+	box-shadow: 0px 2px 9px rgba(112, 121, 136, 0.3);
+	border-radius: 12px;
+	padding: 30px 50px;
+}
+
+.content-card-presupuesto{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-rows: repeat(2, auto);
+	grid-template-columns: 20% 80%;
+}
+
